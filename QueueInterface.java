@@ -2,7 +2,7 @@ package QUEUES;
 
 public interface QueueInterface<T> {
 
-  public void enqueue(T newEntry);
+  	public void enqueue(T newEntry);
 	
 	public T dequeue();
 	
