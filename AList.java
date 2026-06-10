@@ -68,7 +68,11 @@ public class AList<T> implements ListInterface<T> {
 	}
 	
 	public void clear() {
-		
+		int pos = numberOfEntries;
+		while (pos > 0) {
+			remove(pos);
+			pos--;
+		}
 	}
 	
 	public boolean replace(int givenPosition, T newEntry) {
